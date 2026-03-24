@@ -1,0 +1,310 @@
+/* 🌌 Techy Animated Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color:antiquewhite;
+    background: #1c1d3c;
+    overflow-x: hidden;
+}
+
+/* 🔵 Moving gradient */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        #590f33,
+        #6e2eb7,
+        #92c4f3,
+        #429cdb
+    );
+    animation: moveBG 10s linear infinite;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+@keyframes moveBG {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-25%, -25%); }
+    100% { transform: translate(0, 0); }
+}
+
+/* 🔝 Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: rgba(82, 63, 85, 0.6);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: rgb(244, 196, 137);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 📦 Sections (FIXED ALIGNMENT) */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+/* 🔧 Fix anchor scroll position */
+section {
+    scroll-margin-top: 80px; /* adjust based on navbar height */
+}
+
+/* 🏠 Home Section */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 40px;
+}
+
+.home-content span {
+    color: #f777b5;
+}
+
+.home-content h2 {
+    margin-top: 10px;
+    font-weight: normal;
+    color: #af8dff;
+}
+
+.home-content p {
+    margin-top: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 🔘 Buttons */
+.home-buttons {
+    margin-top: 20px;
+}
+
+.btn, .btn-outline {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn {
+    background: #7522ac;
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    background: #bf4ccc;
+}
+
+.btn-outline {
+    border: 2px solid #7522ac;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background: #6a2a71;
+    color: rgb(255, 255, 255);
+}
+
+/* 📄 About Section Fix */
+#about p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+#about ul {
+    list-style-position: inside;
+    padding: 0;
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+#about li {
+    margin-bottom: 10px;
+}
+
+/* 💼 Experience Fix */
+/* 🎯 Experience Section Center Fix */
+#experience {
+    text-align: center;
+}
+
+#experience ul {
+    display: inline-block;
+    text-align: left;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+#experience li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+/* 🟦 Skill Cards */
+.skill-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px 30px;
+    background: rgba(255, 0, 136, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #ec63cc;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* 🔽 Skill detail (centered container) */
+#skill-detail {
+    margin-top: 25px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🧠 Each skill line */
+.skill-line {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    max-width: 600px;
+    width: 100%;
+    justify-content: flex-start; /* keeps text aligned nicely */
+}
+
+/* 🔹 Skill title */
+.skill-name {
+    font-weight: bold;
+    color: rgb(201, 6, 103);
+    min-width: 140px; /* aligns all labels nicely */
+    text-align: right;
+}
+
+/* 🔹 Skill description */
+.skill-desc {
+    color: cornflowerblue;
+    text-align: left;
+}
+
+
+/* 💻 Floating Icons Background */
+.floating-icons {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.floating-icons span {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.2;
+    animation: float 10s linear infinite;
+}
+
+.floating-icons span:nth-child(1) { left: 10%; animation-duration: 12s; }
+.floating-icons span:nth-child(2) { left: 30%; animation-duration: 10s; }
+.floating-icons span:nth-child(3) { left: 50%; animation-duration: 14s; }
+.floating-icons span:nth-child(4) { left: 70%; animation-duration: 9s; }
+.floating-icons span:nth-child(5) { left: 85%; animation-duration: 11s; }
+.floating-icons span:nth-child(6) { left: 20%; animation-duration: 13s; }
+
+@keyframes float {
+    0% {
+        top: 100%;
+        transform: translateY(0);
+    }
+    100% {
+        top: -10%;
+        transform: translateY(-100%);
+    }
+}
+
+/* 💎 Contact Card */
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(4, 150, 255, 0.3);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #6f1548;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-card a {
+    color: #a56ae3;
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* EACH SECTIONS INTO CARD STYLE*/
+
+/* 🧊 Center Floating Card (like Contact) */
+.section-card {
+   background: rgba(100, 197, 232, 0.122);
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px auto;
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 21, 255, 0.2);
+    text-align: left;
+}
+
+
+/*🎯 OPTIONAL (for mobile responsiveness 🔥)*/
+@media (max-width: 768px) {
+    .section-card {
+        width: 90%;
+    }
+}

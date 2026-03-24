@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Siva Gayathri Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+<!-- 💻 Floating Icons -->
+    <div class="floating-icons">
+        <span>💻</span>
+        <span>🖥️</span>
+        <span>⌨️</span>
+        <span>💻</span>
+        <span>🖥️</span>
+        <span>⌨️</span>
+    </div>
+
+<!-- 🔝 Navbar -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 👩‍💻 Home -->
+    <section id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span style="font-size: larger;">SIVA GAYATHRI</span> 👋</h1>
+            <h2>Aspiring Software Developer</h2>
+            <p>
+                I am a passionate and dedicated developer who enjoys building user-friendly 
+                and efficient applications. I love exploring new technologies, solving real-world 
+                problems, and continuously improving my skills to grow in the tech industry.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#projects" class="btn">🚀 View Projects</a>
+                <a href="#contact" class="btn-outline">📞 Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+<!-- 📄 About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="section-card">
+      <p>
+        I enjoy working with technologies like Python, HTML, CSS, and JavaScript to
+        create functional and user-friendly solutions. I am continuously learning and improving my skills
+        to become a proficient developer and contribute effectively to the tech industry.
+      </p>
+
+      <h3>🎓 Education</h3>
+      <ul>
+        <li><strong>B.E Computer Science and Engineering</strong> – Velalar College of Engineering and Technology (2021–2025) | CGPA: 8.64</li>
+        <li><strong>HSC</strong> – Velalar Matric Higher Secondary School (2020–2021) | 92.4%</li>
+        <li><strong>SSLC</strong> – Literacy Mission Matric Higher Secondary School (2018–2019) | 92.2%</li>
+      </ul>
+      </div>
+    </section>
+ 
+
+<!-- 💼 Experience & Training -->
+    <section id="experience">
+        <h2>Experience & Training</h2>
+        <div class="section-card">
+        <h3>💼 Internships</h3>
+        <ul>
+            <li>
+                <strong>Front-End Developer Intern</strong> – Plenitude IT (Jan 2025 – Mar 2025)
+                <br>
+                Worked on real-world applications and improved web development skills.
+            </li>
+
+            <li>
+                <strong>Front-End Development Intern</strong> – Xenovex Technologies (Jun 2024 – Jul 2024)
+                <br>
+                Built responsive web pages using HTML, CSS, and JavaScript.
+            </li>
+        </ul>
+
+        <h3>📚 Training</h3>
+        <ul>
+            <li>
+                <strong>Data Annotation Training</strong> – Vista Engineering Solutions (Dec 2025 – Jan 2026)
+                <br>
+                Worked on data labeling tasks including lane detection and vehicle datasets.
+            </li>
+        </ul>
+        </div>
+    </section>
+
+<!-- ⚙️ Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+    <div class="section-card">
+      <div class="skill-cards">
+        <div class="card" onclick="showSkill('python')">Python</div>
+        <div class="card" onclick="showSkill('sql')">SQL</div>
+        <div class="card" onclick="showSkill('web')">Web Dev</div>
+        <div class="card" onclick="showSkill('tools')">Tools</div>
+      </div>
+
+      <div id="skill-detail">
+        <p>Click a skill to see details</p>
+      </div>
+      </div>
+    </section>
+ 
+
+
+<!-- 🚀 Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="section-card">
+        <!-- 🌟 Main Project (Highlighted) -->
+        <div class="project-card highlight">
+            <h3>AI Resume Analyzer</h3>
+
+            <ul>
+            <li>Analyzes resumes and extracts text from PDF files</li>
+            <li>Matches skills based on selected job roles</li>
+            <li>Provides score and improvement suggestions</li>
+            <li>Built a complete web-based application</li>
+            </ul>
+
+            <p><strong>Tech:</strong> Python, HTML, CSS, JavaScript, PyPDF2, NumPy, Flask</p>
+
+            <a href="https://ai-resume-analyzer-x3c4.onrender.com" target="_blank">
+            🔗 View Live Project
+            </a>
+        </div>
+
+        <!-- 📘 Academic Projects -->
+        <div class="project-card">
+            <h3>Academic Projects</h3>
+
+            <ul>
+            <li>
+                <strong>Ornament Tracking System:</strong> Used GPS to track and monitor real-time location of ornaments
+            </li>
+            <li>
+                <strong>Childbirth Prediction System:</strong> Built ML model to predict childbirth mode with high accuracy
+            </li>
+            </ul>
+
+            <p><strong>Tech:</strong> Machine Learning, Java, GPS</p>
+        </div>
+         </div>
+    </section>
+
+
+<!-- 📞 Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-card">
+            <p>👩‍💻 <strong>Siva Gayathri S</strong></p>
+
+            <p>📧 
+                <a href="mailto:sivagayathrisadhasivam2329@gmail.com">
+                    sivagayathrisadhasivam2329@gmail.com
+                </a>
+            </p>
+
+            <p>📱 +91 9790612054</p>
+
+            <p>📍 Tirupur, Tamil Nadu, India</p>
+
+            <div class="links">
+                <a href="https://linkedin.com/in/siva-gayathri-s-2329SK10" target="_blank">🔗 LinkedIn</a>
+                <a href="https://github.com/SSivaGayathri" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+    </section>
+
+
+<!-- 🔧 JS -->
+     <script>
+        function showSkill(skill) {
+            const detail = document.getElementById("skill-detail");
+
+            if (skill === "python") {
+                detail.innerHTML = `
+                    <div class="skill-line">
+                        <span class="skill-name">Python:</span>
+                        <span class="skill-desc">Strong programming skills with OOP, functions, and problem-solving.</span>
+                    </div>
+                    <div class="skill-line">
+                        <span class="skill-name">Advanced Concepts:</span>
+                        <span class="skill-desc">Experience with lambda, map, filter, and real-world logic building.</span>
+                    </div>
+                `;
+            } 
+            
+            else if (skill === "sql") {
+                detail.innerHTML = `
+                    <div class="skill-line">
+                        <span class="skill-name">SQL Queries:</span>
+                        <span class="skill-desc">Writing efficient queries using SELECT, JOIN, and GROUP BY.</span>
+                    </div>
+                    <div class="skill-line">
+                        <span class="skill-name">Database Concepts:</span>
+                        <span class="skill-desc">Good understanding of keys, normalization, and data handling.</span>
+                    </div>
+                `;
+            } 
+            
+            else if (skill === "web") {
+                detail.innerHTML = `
+                    <div class="skill-line">
+                        <span class="skill-name">Frontend:</span>
+                        <span class="skill-desc">HTML, CSS, JavaScript with responsive UI design.</span>
+                    </div>
+                    <div class="skill-line">
+                        <span class="skill-name">UI Design:</span>
+                        <span class="skill-desc">Clean layouts using Flexbox and Grid.</span>
+                    </div>
+                `;
+            } 
+            
+            else if (skill === "tools") {
+                detail.innerHTML = `
+                    <div class="skill-line">
+                        <span class="skill-name">Power BI:</span>
+                        <span class="skill-desc">Dashboard creation and data visualization.</span>
+                    </div>
+                    <div class="skill-line">
+                        <span class="skill-name">Design Tools:</span>
+                        <span class="skill-desc">Figma and Canva for UI/UX design.</span>
+                    </div>
+                    <div class="skill-line">
+                        <span class="skill-name">Productivity:</span>
+                        <span class="skill-desc">Excel and GitHub for version control.</span>
+                    </div>
+                `;
+            }
+        }
+    </script>
+    
+  </body>
+</html>
